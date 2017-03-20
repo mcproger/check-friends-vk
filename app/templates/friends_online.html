@@ -1,0 +1,16 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1 align="middle"><a href="/login">Friends online</a></h1>
+
+<fieldset id="output" align="middle">
+    {% for id in friends %}
+    <p id="friends" align="middle"><a href="https://vk.com/id{{id['uid']}}">{{id['first_name']}} {{id['last_name']}}</a></p></li>
+    {% endfor %}
+</fieldset>
+{% endblock %}
+
+
+
+

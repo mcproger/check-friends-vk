@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 align="middle"><a href="/login">Check VK Friends</a></h1>
+<p align="middle">Please enter VK ID</p>
+<form action="/friends_online" size="10" method="GET" id="input" align="middle"><input name="text">
+    <p><input type="submit" value="Check Friends"> <input type="reset" value="Reset"></p></form>
+<p id="hello" align="middle">You can see which of your friends (or friends your friends) are online now </a></p>
+{% endblock %}
+
+
